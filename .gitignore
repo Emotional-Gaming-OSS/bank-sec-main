@@ -1,0 +1,5 @@
+node_modules/
+HOW-TO-RUN.md
+.venv/
+.env
+HOSTING.md

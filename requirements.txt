@@ -1,0 +1,45 @@
+# BankSec Enterprise Requirements
+# Production-ready dependencies for enterprise architecture
+
+# Core Flask
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-Migrate==4.0.5
+Flask-CORS==4.0.0
+Flask-Limiter==3.5.0
+
+# Database
+SQLAlchemy==2.0.19
+psycopg2-binary==2.9.7  # PostgreSQL
+alembic==1.11.3
+
+# Authentication & Security
+bcrypt==4.0.1
+PyJWT==2.8.0
+python-dotenv==1.0.0
+
+# Background Tasks
+Celery==5.3.1
+redis==4.6.0
+
+# Utilities
+click==8.1.7
+gunicorn==21.2.0
+python-dateutil==2.8.2
+
+# Development & Testing (only for dev environment)
+pytest==7.4.2
+pytest-flask==1.2.0
+pytest-cov==4.1.0
+black==23.7.0
+flake8==6.1.0
+mypy==1.5.1
+
+# Monitoring & Logging
+prometheus-client==0.17.1
+structlog==23.1.0
+
+# Optional: For advanced features
+marshmallow==3.20.1  # Serialization
+apispec==6.3.0      # API documentation
+flask-apispec==0.11.4
