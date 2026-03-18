@@ -61,10 +61,14 @@ def create_app(config_name: str = 'development') -> Flask:
     
     # Setup logging
     setup_logging(app)
-    
-    # Initialize database
-    with app.app_context():
-        db.create_all()
+
+    # Initialize database (skip in serverless environments like Vercel)
+    if not os.environ.get('VERCEL'):
+        with app.app_context():
+            try:
+                db.create_all()
+            except Exception as e:
+                app.logger.warning(f"Database initialization skipped: {e}")
         # _init_sample_data()  # Temporarily disabled until db is properly initialized
 
     return app
