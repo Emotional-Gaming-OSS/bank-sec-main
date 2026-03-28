@@ -2,10 +2,10 @@
 # Production-ready dependencies for enterprise architecture
 
 # Core Flask
-Flask==2.3.3
+Flask==3.1.3
 Flask-SQLAlchemy==3.0.5
 Flask-Migrate==4.0.5
-Flask-CORS==4.0.0
+Flask-CORS==6.0.0
 Flask-Limiter==3.5.0
 
 # Database
@@ -24,14 +24,14 @@ redis==4.6.0
 
 # Utilities
 click==8.1.7
-gunicorn==21.2.0
+gunicorn==22.0.0
 python-dateutil==2.8.2
 
 # Development & Testing (only for dev environment)
 pytest==7.4.2
 pytest-flask==1.2.0
 pytest-cov==4.1.0
-black==23.7.0
+black==26.3.1
 flake8==6.1.0
 mypy==1.5.1
 
@@ -40,6 +40,6 @@ prometheus-client==0.17.1
 structlog==23.1.0
 
 # Optional: For advanced features
-marshmallow==3.20.1  # Serialization
+marshmallow==3.26.2  # Serialization
 apispec==6.3.0      # API documentation
 flask-apispec==0.11.4
